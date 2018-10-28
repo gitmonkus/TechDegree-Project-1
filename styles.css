@@ -116,6 +116,25 @@ header .profile-image:hover {
 .card:hover {
   border-color:  #deff33;
 }
+.card p {
+  font-family: 'Roboto', sans-serif;
+}
+.experience-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 75%;
+  text-align: left;
+  background: #f7f5f0;
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.experience-card:hover {
+  border-color:  #deff33;
+}
+.experience-card p {
+  font-family: 'Roboto', sans-serif;
+}
 
 ul.skills {
   padding: 0;

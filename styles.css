@@ -1,24 +1,30 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Kaushan Script', cursive, 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background:  #f2fac8;
 }
+
+h2:hover {
+  background: #deff33;
+  border-radius: .5rem;
+}
+
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: white;
 }
 a:hover {
-  color: #6633ff;
+  color: white;
 }
 
 /* Section Styles */
@@ -39,10 +45,12 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-
 .nav .name {
     display: block;
     margin-right: auto;
+    color: #deff33;
+}
+.nav .middle-name {
     color: white;
 }
 .nav li {
@@ -50,14 +58,21 @@ a:hover {
 }
 .nav a {
   transition: all .5s;
+  border: solid .1rem;
+  border-radius: 5px;
+  padding: .5rem;
+  color: #deff33;
+
 }
 .nav a:hover {
-  color: white
+  color: white;
+  border: 0;
+
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/zen_background.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -83,7 +98,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: yellow;
@@ -93,18 +108,22 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: #f7f5f0;
+  border: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color:  #deff33;
 }
 
 ul.skills {
   padding: 0;
   text-align: center;
+}
+
+.skills li:hover {
+  background: #0399ff;
 }
 
 .skills li {
@@ -114,6 +133,10 @@ ul.skills {
   color: white;
   padding: 5px 10px;
   margin: 2px;
+}
+
+.skills li:nth-child(odd):hover {
+  background: #ff9904;
 }
 
 .skills li:nth-child(odd) {
@@ -169,10 +192,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +227,3 @@ a.social:hover {
   }
 
 }
-

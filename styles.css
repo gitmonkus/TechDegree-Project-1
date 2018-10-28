@@ -1,5 +1,5 @@
 /* Global Layout Set-up */
-* {
+{
   box-sizing: border-box;
 }
 
@@ -9,12 +9,7 @@ body {
   text-align: center;
   font-family: 'Kaushan Script', cursive, 'Roboto', sans-serif;
   color: #222;
-  background:  #f2fac8;
-}
-
-h2:hover {
-  background: #deff33;
-  border-radius: .5rem;
+  background:  #bfce73;
 }
 
 /* Link Styles */
@@ -39,10 +34,11 @@ a:hover {
 }
 .nav {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 10px;
   padding: 0;
 }
 .nav .name {
@@ -106,18 +102,27 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 400px;
   text-align: left;
   background: #f7f5f0;
   border: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: all .5s;
 }
 .card:hover {
   border-color:  #deff33;
 }
+.card:hover h2 {
+  background: #deff33;
+  border-radius: .5rem;
+}
 .card p {
   font-family: 'Roboto', sans-serif;
+}
+.card img {
+  border-radius: 10px;
+  width: 100%;
+
 }
 .experience-card {
   margin: 30px;
@@ -132,8 +137,20 @@ header .profile-image:hover {
 .experience-card:hover {
   border-color:  #deff33;
 }
+.experience-card a {
+  color: black;
+}
+.experience-card:hover a {
+  background: #deff33;
+  border-radius: .5rem;
+}
+
 .experience-card p {
   font-family: 'Roboto', sans-serif;
+}
+.experience-card:hover h2 {
+  background: #deff33;
+  border-radius: .5rem;
 }
 
 ul.skills {
@@ -194,19 +211,37 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(images/twitter.png);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/linkedin.png);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/github.png);
 }
 a.social:hover {
   opacity: 1;
 }
 .clearfix {
   clear: both;
+}
+
+/* Recent Work page -- to add descriptions to the images */
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 5px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 /* Styles for larger screens */
@@ -217,8 +252,14 @@ a.social:hover {
       display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
+      flex-flow: row wrap;
       justify-content: space-around;
       margin: 0 auto;
+  }
+  .flex h1{
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px #deff33;
   }
 
   header {

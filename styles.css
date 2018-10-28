@@ -80,12 +80,12 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 100%;
+  border: 5px solid white;
+  transition: all .6s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(2.0) rotate(720deg);
 }
 .tag {
   background-color: #efefef;
@@ -115,6 +115,10 @@ header .profile-image:hover {
 .card:hover h2 {
   background: #deff33;
   border-radius: .5rem;
+}
+.card li {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem;
 }
 .card p {
   font-family: 'Roboto', sans-serif;

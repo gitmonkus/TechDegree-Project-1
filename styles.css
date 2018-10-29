@@ -230,24 +230,6 @@ a.social:hover {
   clear: both;
 }
 
-/* Recent Work page -- to add descriptions to the images */
-
-/*figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    padding: 5px;
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
-*/
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 

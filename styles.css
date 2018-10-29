@@ -28,7 +28,6 @@ a:hover {
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: 10px;
   position: fixed;
   text-align: center;
 }
@@ -46,24 +45,19 @@ a:hover {
     margin-right: auto;
     color: #deff33;
 }
-.nav .middle-name {
-    color: white;
-}
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 1px 0 0 5px;
 }
 .nav a {
   transition: all .5s;
   border: solid .1rem;
   border-radius: 5px;
-  padding: .5rem;
+  padding: .3rem;
   color: #deff33;
-
 }
 .nav a:hover {
   color: white;
   border: 0;
-
 }
 
 header {
@@ -188,18 +182,15 @@ footer {
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
-
 footer .copyright {
   top: -8px;
   font-size: .75em;
 }
-
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 footer ul li {
   display: inline-block;
 }

@@ -1,5 +1,5 @@
 /* Global Layout Set-up */
-{
+* {
   box-sizing: border-box;
 }
 
@@ -126,8 +126,8 @@ header .profile-image:hover {
 .card img {
   border-radius: 10px;
   width: 100%;
-
 }
+
 .experience-card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -232,7 +232,7 @@ a.social:hover {
 
 /* Recent Work page -- to add descriptions to the images */
 
-figure {
+/*figure {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: row wrap;
@@ -247,7 +247,7 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
-
+*/
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 

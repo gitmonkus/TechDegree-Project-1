@@ -49,15 +49,11 @@ a:hover {
   padding: 1px 0 0 5px;
 }
 .nav a {
-  transition: all .5s;
-  border: solid .1rem;
-  border-radius: 5px;
   padding: .3rem;
   color: #deff33;
 }
 .nav a:hover {
-  color: white;
-  border: 0;
+  text-decoration: underline;
 }
 
 header {
@@ -101,14 +97,14 @@ header .profile-image:hover {
   background: #f7f5f0;
   border: 4px solid #ccc;
   border-radius: 10px;
-  transition: all .5s;
+  transition: all .7s;
 }
 .card:hover {
   border-color:  #deff33;
 }
 .card:hover h2 {
-  background: #deff33;
-  border-radius: .5rem;
+  text-shadow: 2px 2px #deff33;
+  transition: all .7s;
 }
 .card li {
   font-family: 'Roboto', sans-serif;
@@ -130,7 +126,7 @@ header .profile-image:hover {
   background: #f7f5f0;
   border: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all .7s;
 }
 .experience-card:hover {
   border-color:  #deff33;
@@ -138,43 +134,31 @@ header .profile-image:hover {
 .experience-card a {
   color: black;
 }
-.experience-card:hover a {
-  background: #deff33;
-  border-radius: .5rem;
+.experience-card:hover a{
+  text-shadow: 2px 2px #deff33;
 }
-
 .experience-card p {
   font-family: 'Roboto', sans-serif;
 }
 .experience-card:hover h2 {
-  background: #deff33;
-  border-radius: .5rem;
+  text-shadow: 2px 2px #deff33;
+  transition: all .7s;
 }
 
 ul.skills {
   padding: 0;
   text-align: center;
 }
-
-.skills li:hover {
-  background: #0399ff;
-}
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
   color: white;
   padding: 5px 10px;
   margin: 2px;
+  background: #73A200;
 }
-
-.skills li:nth-child(odd):hover {
-  background: #ff9904;
-}
-
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #BBDB3A;
 }
 
 footer {
